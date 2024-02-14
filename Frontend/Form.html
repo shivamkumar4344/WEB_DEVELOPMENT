@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    
+</head>
+<body style="background-color:rgb(0, 119, 143)">
+    <h2 style="text-align:center;">
+        Don't have an account?! Want to join us?!
+    </h2>
+    <style>
+        .format{
+            font-family: fantasy;
+            line-height: 50px;
+            border: 2px hidden black;
+            border-collapse: collapse;
+            width : 30%;
+            height : 50%;
+            text-align : left;
+            margin-left : 35%;
+            border-radius: 2px;
+            background-color: rgb(34, 175, 245);
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+        
+        .submit{
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+        }
+    </style>
+<div class="format">
+    <form onsubmit="return isValid();">
+        <label for="fname" id="fname">
+                First Name  
+        </label>
+        <input type="text" placeholder="First Name" name="firstname" id="fname">
+        <br>
+        <label for="lname" >
+            Last Name
+        </label>
+        <input type="text" placeholder="Last Name" name="lname" id="lname">
+        <br>
+        <label for="gender">
+            Gender
+        </label>
+        <input type="radio" value="male" name="male">
+        Male
+        <input type="radio" value="female" name="female">
+        Female
+        <input type="radio" value="others" name="others">
+        Others
+        <br>
+        <label for="selectcity" value="selectcity" name="selectcity">
+            Select City
+        </label>
+        <select>
+            <option value="patna">Patna</option>
+            <option value="kolkata">Kolkata</option>
+            <option value="varanasi">Varanasi</option>
+            <option value="darjeeling">Darjeeling</option>
+            <option value="assam">Assam</option>
+        </select>
+        <br>
+        <label for="Address" name="Address" value="Address">
+            Address
+        </label>
+        <textarea name="Address" id="Address" cols="12" rows="2"></textarea>
+        <br>
+        <label for="password" name="password">
+            Password
+        </label>
+        <input type="password">
+        <br>
+        <label for="file">
+            Choose File
+        </label>
+        <input type="file">
+        <br>
+        <label for="contacts" name="contacts">
+            Contacts
+        </label>
+        <input type="number">
+        <br>
+        <input type="checkbox">I agree to the terms and conditions.
+        <br>
+        <div class="submit">
+            <button>Submit</button>
+            <button>Reset</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
