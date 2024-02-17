@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing Events</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+    #start{
+        border-radius: 2px;
+        border: solid black 2px;
+        width:80px;
+        margin-right: 20px;
+    }
+    #stop{
+        border-radius: 2px;
+        border: solid black 2px;
+        width:80px;
+    }
+</style>
+<body>
+    <h1 style="font-family:Arial, Helvetica, sans-serif;">Timing Events</h1>
+    <button onclick="start()" id="start">Start</button>
+    <button onclick="stop()" id="stop">Stop</button>
+    <div id = "demo"></div>
+    <script>
+        let interval;
+        function dateTime(){
+            document.getElementById("demo").innerHTML = new Date().toLocaleString();
+            document.getElementById("demo").style.cssText = "font-family:Arial, Helvetica, sans-serif;font-size:70px ; color:blue";
+        }
+        function start()
+        {
+            interval = setInterval(dateTime,10000);
+        }
+        function stop()
+        {
+            clearInterval(interval);
+        }
+
+    </script>
+</body>
+</html>
