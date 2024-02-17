@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment Button</title>
+</head>
+<body>
+    <style>
+        body{
+            text-align: center;
+            background-color: orange;
+
+        }
+        #increment{
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 8px;
+            border-width: 2px;
+            border-style:hidden;
+            width: 60px;
+            background-color:black;
+            color:white;
+
+        }
+        #value{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 400;
+        }
+
+    </style>
+    <h1 style="font-family:'Times New Roman', Times, serif">Initial Value: <span id = "value">0</span></h1>
+    <button id = "increment">Click Me!</button>
+    <script>
+        const valueE1 = document.getElementById("value");
+        const increment = document.getElementById("increment");
+        let value = 0;
+        increment.addEventListener('click',() => 
+        {
+            value++;
+            valueE1.textContent = value;
+
+        });
+    </script>
+    
+</body>
+</html>
