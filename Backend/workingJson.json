@@ -1,0 +1,11 @@
+{
+    "name":"Shivam",
+    "sec":"K22YH",
+    "salary":1000098.87,
+    "isAdmin":true,
+    "list":[43,89,9],
+    "nested":{
+        "Lastname":"Yadav",
+        "age":20
+    }
+}
