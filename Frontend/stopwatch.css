@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    background: #202020;
+    height: 100vh;
+}
+
+#stopwatch{
+    font-size: 80px;
+    padding: 10px;
+    color:white;
+    border-radius: 10px;
+    border: solid 1px white;
+}
+
+#buttons{
+    margin-top: 15px;
+    display: flex;
+}
+
+button{
+    padding: 10px;
+    margin: 10px;
+    width: 70px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: solid 1px white;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: red;
+
+}
+button:active{
+    box-shadow: none;
+    transition: all 0.5s;
+
+}
+
+#heading{
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 30px;
+}
+
