@@ -1,11 +1,10 @@
 const http = require("http");
-const myServer = http.createServer((req,res) =>
-{
-    console.log("New requset received!");
-    res.end("Hello Shivam How are you??");
+const myServer = http.createServer((req,res) => {
+    console.log("New request received!");
+    res.end("HEllO SHIVAM WELCOME TO THE SERVER!!");
 });
 
 myServer.listen(5000,()=>
 {
-    console.log("Server is starting");
-})
+    console.log("Server is starting!");
+});
