@@ -1,10 +1,10 @@
-const http = require("http");
+const http = require("node:http");
 const myServer = http.createServer((req,res) => {
     console.log("New request received!");
     res.end("HEllO SHIVAM WELCOME TO THE SERVER!!");
 });
 
-myServer.listen(5000,()=>
+myServer.listen(8000,()=>
 {
     console.log("Server is starting!");
 });
