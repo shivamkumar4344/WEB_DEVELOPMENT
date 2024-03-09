@@ -5,7 +5,7 @@ app.get('/',(req,res)=>{
     res.send("Hello World!");
 })
 
-app.get('/about',(req,res)=>{
+app.post('/about',(req,res)=>{
     res.sendFile(path.join(__dirname,'index.html'));
     // res.send("about");
     // res.json({
