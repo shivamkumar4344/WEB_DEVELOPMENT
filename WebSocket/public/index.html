@@ -5,8 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Sockets</title>
 </head>
+<style>
+    body{
+            justify-content: center;
+            text-align: center;
+            background-color:#202020;
+        }
+        h1{
+            color:white;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #sendBtn{
+            border: solid 2px wheat;
+            border-radius: 2px;
+            margin-left:5px;
+        }
+        #message{
+            border: solid 2px wheat;
+            border-radius: 2px;
+            font-weight: 300;
+            color: black;
+        }
+        #output{
+            color: whitesmoke;
+            margin-right:20%;
+            font-weight: 500;
+            font-size:larger;
+        }
+</style>
 <body>
-    <h1>Chatting</h1>
+    <h1>Real-Time Chatting</h1>
     <input type="text" id="message" placeholder="Enter message">
     <button id="sendBtn">Send</button>
     <div id="output"></div>
